@@ -1,14 +1,14 @@
 import './App.css'
-import Header from './components/header'
+//import Header from './components/header'
+import Background from './components/background';
 
 function App() {
 
   return (
     <>
-    <Header/>
-    <div className='bg-[#1d1d1d] w-full h-screen' ></div>
+    <Background/>
     </>
   )
 }
 
-export default App
+export default App;
