@@ -3,17 +3,14 @@ import { useState } from 'react';
 
 const Header = () => {
   const Links = [
-    {name: 'Home', link:'/'},
-    {name: 'Home', link:'/'},
-    {name: 'Home', link:'/'},
-    {name: 'Home', link:'/'},
+    {name: 'About us', link:'/'},
   ]; 
   const [isOpen, setIsOpen] = useState(false);
   return (
     <div className='shadow-md w-full fixed top-0 left-0 '>
       <div className='md:px-10 py-4 px-7 md:flex justify-between items-center bg-[#1d1d1d]'>
         <div className='flex text-2x1 cursor-pointer items-center gap-2'>
-          <span className='font-bold'>FELLISSE</span>
+          <span className='font-bold text-white'>FELLISSE</span>
         </div>
         {/* Menu Icon*/}
         <div onClick={() => setIsOpen(!isOpen)} className={`w-7 h-7 absolute right-8 top-6 cursor-pointer md:hidden`}>
@@ -30,7 +27,7 @@ const Header = () => {
               </li>
             ))
           }
-          <button className='btn bg-red-800 text-white py-1 px-3 md:ml-8 rounded md:static'>Log In</button>
+          <button className='btn bg-red-800 text-white py-1 px-3 md:ml-8 rounded md:static'>Log In/Register</button>
         </ul>
       </div>
     </div>
