@@ -1,4 +1,4 @@
-import video from '../assets/gif.mp4'
+import video from '../assets/video.mp4'
 import Header from './header';
 import Content from './content';
 import Footer from './footer';
