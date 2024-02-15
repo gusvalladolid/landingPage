@@ -1,8 +1,10 @@
 import video from '../assets/video.mp4'
-import Header from './header';
-import Content from './content';
-import Footer from './footer';
-const Background = () => {
+import Header from '../components/header';
+import Content from '../components/content';
+import Footer from '../components/footer';
+
+
+const Home = () => {
     return (
     <div className='relative h-screen'>
       {/* Background Video Container */}
@@ -22,4 +24,4 @@ const Background = () => {
     );
 };
 
-export default Background;
+export default Home;

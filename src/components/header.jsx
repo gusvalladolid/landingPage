@@ -1,6 +1,7 @@
 import { Bars3BottomRightIcon, XMarkIcon} from '@heroicons/react/24/solid';
 import { useState } from 'react';
-import getAllUsers from '../api/methods';
+import { Link } from 'react-router-dom';
+//import getAllUsers from '../api/methods';
 
 const Header = () => {
   const Links = [
@@ -10,7 +11,7 @@ const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className='shadow-md w-full fixed top-0 left-0 '>
+    <div className='shadow-md w-full fixed top-0 left-0'>
       <div className='md:px-10 py-4 px-7 md:flex justify-between items-center bg-[#1d1d1d]'>
         <div className='flex text-2x1 cursor-pointer items-center gap-2'>
           <span className='font-bold text-white'>FELLISSE</span>
@@ -30,12 +31,9 @@ const Header = () => {
               </li>
             ))
           }
-          <button className='btn bg-red-800 text-white py-1 px-3 md:ml-8 rounded md:static' onClick={ async () => {
-            const response = async () => {
-              return await getAllUsers();
-            }
-            console.log(response);
-          }}>Log In/Register</button>
+          <Link to='/register'>
+          <button className='btn bg-red-800 text-white py-1 px-3 md:ml-8 rounded md:static'>Log In/Register</button>
+          </Link>
         </ul>
       </div>
     </div>
