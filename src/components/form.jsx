@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
-import { useState } from "react";
+import { register, logIn } from "../api/methods"
 import PropTypes from "prop-types"
+import { useState } from "react";
 
 const AuthForm = ( {type} ) => {
   const formText = {
@@ -12,29 +13,39 @@ const AuthForm = ( {type} ) => {
     "register":{
       "welcomeText":"Welcome",
       "changeBetween":"You already have an account? Log In!",
-      "customButton":"Register"
+      "customButton":"Register",
     }
   };
 
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
 
-  // Event handler for username input change
   const handleUsernameChange = (e) => {
   setUsername(e.target.value);
   };
 
-  // Event handler for password input change
   const handlePasswordChange = (e) => {
   setPassword(e.target.value);
   };
 
-  // Event handler for button click
-  const handleRegisterClick = () => {
-  // Log the input values to the console
-  console.log("Username:", username);
-  console.log("Password:", password);
+  const handleRegisterClick = async () => {
+    try {
+      const response = await register(username, password);
+      console.log(response);
+    } catch (error) {
+      console.error(error); 
+    }
   };
+
+  const handleLoginClick = async () => {
+    try {
+      const response = await logIn(username, password);
+      console.log(response);
+    } catch (error) {
+      console.error(error); 
+    }
+  };
+  
 
   return (
     <div className='flex w-full h-screen bg-[#1d1d1d]'>
@@ -70,12 +81,12 @@ const AuthForm = ( {type} ) => {
             </div>
           </div>
           <div className="mt-2">
-            <button className='font-medium text-base text-red-600'>{formText[type].changeBetween}</button>
+            <Link className='font-medium text-base text-red-600' to={type === "register" ? "/login" : "/register"} >{formText[type].changeBetween}</Link>
           </div>
           <div className='mt-8 flex flex-col items-center'>
             <button 
             className='active:scale-[.98] active:duration-75 transition-all hover:scale-[1.01] ease-in-out py-3 rounded-xl bg-red-800 text-white text-lg font-bold w-full'
-            onClick={handleRegisterClick}>{formText[type].customButton}</button>
+            onClick={type === "register" ? handleRegisterClick : handleLoginClick}>{formText[type].customButton}</button>
           </div>
         </div>
       </div>

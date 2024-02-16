@@ -1,6 +1,6 @@
 import { Bars3BottomRightIcon, XMarkIcon} from '@heroicons/react/24/solid';
-import { useState } from 'react';
 import { Link } from 'react-router-dom';
+import { useState } from 'react';
 //import getAllUsers from '../api/methods';
 
 const Header = () => {
