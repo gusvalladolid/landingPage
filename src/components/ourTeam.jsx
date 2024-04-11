@@ -2,42 +2,42 @@ const people = [
   {
     name: 'Alejandro García',
     role: 'Leader',
-    imageUrl:'/src/assets/Team/pumpum.jpg',
+    imageUrl:'/src/assets/Img/pumpum.jpg',
   },
   {
     name: 'Kevin Cruz',
     role: 'Game Developer',
-    imageUrl:'/src/assets/Team/Kevin.png',
+    imageUrl:'/src/assets/Img/Kevin.png',
   },
   {
     name: 'Joshua Aviles',
     role: 'Audio Engineer',
-    imageUrl:'/src/assets/Team/Joshua.png',
+    imageUrl:'/src/assets/Img/Joshua.png',
   },
   {
     name: 'Gustavo Valladolid',
     role: 'Developer',
-    imageUrl:'/src/assets/Team/gustavo.png',
+    imageUrl:'/src/assets/Img/gustavo.png',
   },
   {
     name: 'Fabian Escobar',
     role: 'Creative Director',
-    imageUrl:'/src/assets/Team/fabian.jpg',
+    imageUrl:'/src/assets/Img/fabian.jpg',
   },
   {
     name: 'Miguel Velarde',
     role: 'Game Developer',
-    imageUrl:'/src/assets/Team/velarde.jpg',
+    imageUrl:'/src/assets/Img/velarde.jpg',
   },
   {
     name: 'Alex Barraza',
     role: 'Project Manager',
-    imageUrl:'/src/assets/Team/alex.png',
+    imageUrl:'/src/assets/Img/alex.png',
   },
   {
     name: 'Miguel Gamboa',
     role: 'Game Designer',
-    imageUrl:'/src/assets/Team/gamboa.jpg',
+    imageUrl:'/src/assets/Img/gamboa.jpg',
   },
 ]
 
