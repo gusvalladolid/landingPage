@@ -1,5 +1,5 @@
 import { useLocation } from 'react-router-dom'
-import video from '../assets/video.mp4'
+import video from '../assets/FelisseTeaser.mp4'
 import Header from '../components/header'
 import Content from '../components/content'
 import Footer from '../components/footer'
@@ -18,7 +18,6 @@ const Home = () => {
         </video>  
         }
       </div>
-      {/* Content */}
       <div className="relative z-10 h-full flex items-center justify-center">
         <Header loggedUser={location.state}/>
       </div>
@@ -28,4 +27,4 @@ const Home = () => {
   )
 }
 
-export default Home
+export default Home;

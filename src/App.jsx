@@ -1,6 +1,7 @@
 import Login from './views/login'
 import Register from './views/register'
 import Home from './views/home'
+import AboutUs from './views/aboutUs';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
         <Route path='/' element={<Home/>}/>
         <Route path='/login' element={<Login/>}/>
         <Route path='/register' element={<Register/>}/>
+        <Route path='/aboutUs' element={<AboutUs/>}/>
       </Routes>
     </BrowserRouter>
     </>

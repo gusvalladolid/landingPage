@@ -1,5 +1,5 @@
 import axios from 'axios';
-const baseUrl = 'http://localhost:3000/loginRouter'
+const baseUrl = 'https://game-api-rsu3.onrender.com/loginRouter'
 
 const register = async (username, password) => {
   try {
@@ -27,6 +27,7 @@ const logIn = async (username, password) => {
     });
     console.log(response.data)
     if (response.data === false) {
+      console.log(username, password)
       throw new Error("Registration failed. Please check your input.");
     }
 
