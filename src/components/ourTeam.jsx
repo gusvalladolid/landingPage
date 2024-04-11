@@ -1,8 +1,10 @@
+import alejandroProfile from "../../assets/Img/pumpum.jpg"
+
 const people = [
   {
     name: 'Alejandro García',
     role: 'Leader',
-    imageUrl:'/assets/Img/pumpum.jpg',
+    imageUrl:alejandroProfile,
   },
   {
     name: 'Kevin Cruz',
