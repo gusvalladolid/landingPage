@@ -1,4 +1,11 @@
 import alejandroProfile from "../../assets/Img/pumpum.jpg"
+import kevinProfile from "../../assets/Img/Kevin.png"
+import joshuaProfile from "../../assets/Img/Joshua.png"
+import gustavoProfile from "../../assets/Img/gustavo.png"
+import fabianProfile from "../../assets/Img/fabian.jpg"
+import velardeProfile from "../../assets/Img/velarde.jpg"
+import gamboaProfile from "../../assets/Img/gamboa.jpg"
+import alexProfile from "../../assets/Img/alex.png"
 
 const people = [
   {
@@ -9,37 +16,37 @@ const people = [
   {
     name: 'Kevin Cruz',
     role: 'Game Developer',
-    imageUrl:'/assets/Img/Kevin.png',
+    imageUrl:kevinProfile,
   },
   {
     name: 'Joshua Aviles',
     role: 'Audio Engineer',
-    imageUrl:'/assets/Img/Joshua.png',
+    imageUrl:joshuaProfile,
   },
   {
     name: 'Gustavo Valladolid',
     role: 'Developer',
-    imageUrl:'/assets/Img/gustavo.png',
+    imageUrl: gustavoProfile,
   },
   {
     name: 'Fabian Escobar',
     role: 'Creative Director',
-    imageUrl:'/assets/Img/fabian.jpg',
+    imageUrl: fabianProfile,
   },
   {
     name: 'Miguel Velarde',
     role: 'Game Developer',
-    imageUrl:'/assets/Img/velarde.jpg',
+    imageUrl: velardeProfile,
   },
   {
     name: 'Alex Barraza',
     role: 'Project Manager',
-    imageUrl:'/assets/Img/alex.png',
+    imageUrl: gamboaProfile,
   },
   {
     name: 'Miguel Gamboa',
     role: 'Game Designer',
-    imageUrl:'/assets/Img/gamboa.jpg',
+    imageUrl: alexProfile,
   },
 ]
 
